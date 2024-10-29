@@ -15,7 +15,7 @@ public class CurrencyConverterTest {
         CurrencyConverter converter = new CurrencyConverter(dollarRate,dollarAmount);
 
         double expectedAmount = dollarRate * dollarAmount * 1.06;
-        double actualAmount = converter.calculateAmountInReais();
+        double actualAmount = converter.calculateAmountInReaisWithIof();
 
         // delta de 0.1 margem de erro (tolerância) ao comparar números de ponto flutuante
         assertEquals(expectedAmount,actualAmount,0.1);
@@ -31,7 +31,7 @@ public class CurrencyConverterTest {
         CurrencyConverter converter = new CurrencyConverter(dollarRate,dollarAmount);
 
         double expectedAmount = dollarRate * dollarAmount;
-        double actualAmount = converter.calculateAmountInReais();
+        double actualAmount = converter.calculateAmountInReaisWithoutIof();
 
         // delta de 0.1 margem de erro (tolerância) ao comparar números de ponto flutuante
         assertEquals(expectedAmount,actualAmount, 0.1);

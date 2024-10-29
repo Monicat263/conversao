@@ -25,7 +25,7 @@ public class Main {
         double dollarAmount = sc.nextDouble();
 
         CurrencyConverter converter = new CurrencyConverter(dollarRate, dollarAmount);
-        double amountToPayInReais = converter.calculateAmountInReais();
+        double amountToPayInReais = converter.calculateAmountInReaisWithIof();
 
         System.out.printf("Amount to be paid in reais = %.2f%n " , amountToPayInReais);
 

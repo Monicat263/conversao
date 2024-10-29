@@ -17,7 +17,12 @@ public class CurrencyConverter {
         this.dollarAmount = dollarAmount;
     }
 
-    public double calculateAmountInReais(){
+    public double calculateAmountInReaisWithoutIof(){
+        double amountInReais = dollarRate * dollarAmount;
+        return amountInReais;
+    }
+
+    public double calculateAmountInReaisWithIof(){
         double amountInReais = dollarRate * dollarAmount;
         double amountWithIof = amountInReais * (1 +IOF );
         return amountWithIof;
