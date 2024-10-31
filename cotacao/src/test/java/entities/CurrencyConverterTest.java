@@ -1,10 +1,9 @@
 package entities;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 public class CurrencyConverterTest {
 
@@ -21,7 +20,6 @@ public class CurrencyConverterTest {
 
         // delta de 0.1 margem de erro (tolerância) ao comparar números de ponto flutuante
         assertEquals(expectedAmount,actualAmount,0.1);
-
     }
 
     @Test
