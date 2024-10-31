@@ -18,8 +18,7 @@ public class CurrencyConverter {
     }
 
     public double calculateAmountInReaisWithoutIof(){
-        double amountInReais = dollarRate * dollarAmount;
-        return amountInReais;
+        return dollarRate * dollarAmount;
     }
 
     public double calculateAmountInReaisWithIof(){
